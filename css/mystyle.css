@@ -1,0 +1,60 @@
+@font-face {
+  font-family: 'myfont';
+  src:  url('font/Vazir-Bold-FD.eot') format('woff2'),
+        url('font/Vazir-Bold-FD.woff') format('woff');
+}
+body{
+  font-family: "myfont";
+	text-align:right;
+  margin: 0;
+  padding: 0;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+}
+.loading{
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    position: relative;
+    top: 0;
+    right: 0;
+    background: rgb(36,10,241);
+background: linear-gradient(180deg, rgba(36,10,241,1) 15%, rgba(24,19,65,1) 49%);   
+}
+.circle{
+  width: 380px;
+  height: 380px;
+  background-color: #000;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+@keyframes myrotate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(170deg);
+  }
+}
+@keyframes myrotate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(170deg);
+  }
+}
+.loading{
+  animation-name:myrotate;
+  animation-duration: 0.4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: cubic-bezier(0.36, 0.36, 0.56, 0.53);
+
+
+}
